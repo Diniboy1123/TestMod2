@@ -1,0 +1,4 @@
+item.ingot_copper.name=Bronz rúd
+tile.ore_copper.name=Bronz érc
+tile.modcauldron.name=Üst
+itemGroup.dtm=TestMod2

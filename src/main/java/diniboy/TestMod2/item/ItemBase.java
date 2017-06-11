@@ -1,10 +1,13 @@
 package diniboy.TestMod2.item;
 
 import diniboy.TestMod2.TestMod2;
+import net.minecraft.client.Minecraft;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+import net.minecraft.server.MinecraftServer;
+import net.minecraft.world.World;
 
-public class ItemBase extends Item {
+public class ItemBase extends Item implements ItemModelProvider {
 	
 	protected String name;
 
@@ -14,8 +17,9 @@ public class ItemBase extends Item {
 		setRegistryName(name);
 	}
 
-	public void registerItemModel() {
-		TestMod2.proxy.registerRenderer(this, 0, name);
+	@Override
+	public void registerItemModel(Item item) {
+		TestMod2.proxy.registerRenderer(item, 0, name);
 	}
 
 	@Override

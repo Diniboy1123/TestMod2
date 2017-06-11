@@ -8,7 +8,8 @@ import net.minecraft.item.ItemStack;
 public class TestTab extends CreativeTabs {
 	
 	public TestTab() {
-		super("TestMod");
+		super(TestMod2.MODID);
+		setBackgroundImageName("item_search.png");
 	}
 
 	@Override
@@ -16,4 +17,9 @@ public class TestTab extends CreativeTabs {
 		return new ItemStack(ModItems.ingotCopper);
 	}
 
+	@Override
+	public boolean hasSearchBar() {
+		return true;
+	}
+	
 }

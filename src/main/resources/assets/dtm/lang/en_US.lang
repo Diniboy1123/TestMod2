@@ -1,2 +1,4 @@
 item.ingot_copper.name=Copper ingot
 tile.ore_copper.name=Copper ore
+tile.modcauldron.name=Cauldron
+itemGroup.dtm=TestMod2
